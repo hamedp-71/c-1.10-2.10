@@ -45,7 +45,6 @@ tun:
   dns-hijack:
     - 'any:53'
   mtu: 1280
-
 sniffer:
   enable: true
   force-dns-mapping: true
