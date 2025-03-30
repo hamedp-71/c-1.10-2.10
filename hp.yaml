@@ -21,7 +21,7 @@ profile:
 hosts: {}
 dns:
   enable: true
-  listen: 0.0.0.0:5353
+  listen: 0.0.0.0:1053
   ipv6: true
   respect-rules: true
   use-hosts: true
