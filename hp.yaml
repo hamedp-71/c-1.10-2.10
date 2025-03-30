@@ -66,8 +66,8 @@ sniffer:
 proxies:
   - name: "🇮🇷 Warp - IPv4-1"
     type: wireguard
-    ip: 172.16.0.3
-    ipv6: 2001:db8:1::1
+    ip: 172.16.0.2/32
+    ipv6: 2001:db8:1::1/128
     private-key: "jKwEEXoWUZ1xWerKRjCKE980fdi8S9wR/X1Xjl2Gfzk="
     server: 188.114.97.46
     port: 1070
