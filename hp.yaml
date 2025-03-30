@@ -31,20 +31,14 @@ dns:
     - '2001:4860:4860::8888'
     - '8.8.4.4'
     - '2001:4860:4860::8844'
-    - '9.9.9.9'
-    - '2620:fe::fe'
-    - '1.1.1.1'
   proxy-server-nameserver:
     - '8.8.8.8'
     - '2001:4860:4860::8888'
     - '8.8.4.4'
     - '2001:4860:4860::8844'
-    - '9.9.9.9'
-    - '2620:fe::fe'
-    - '1.1.1.1'
 tun:
   enable: true
-  stack: mixed
+  stack: gvisor
   auto-route: true
   strict-route: true
   auto-detect-interface: true
@@ -68,10 +62,10 @@ proxies:
     type: wireguard
     ip: 172.16.0.2/32
     ipv6: 2001:db8:1::1/128
-    private-key: "jKwEEXoWUZ1xWerKRjCKE980fdi8S9wR/X1Xjl2Gfzk="
+    private-key: "pmrMu3TI7/I04KxLa+G9EVDdYLV/fh+blN5tKwTod+o="
     server: 188.114.97.46
     port: 1070
-    public-key: "44gWvMw8TYSWY3fnsvG5DzARlmotp/CLbrNvnCqx40Y="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
     allowed-ips: ["0.0.0.0/0", "::/0"]
     reserved: "AAAA"
     udp: true
@@ -233,8 +227,8 @@ proxy-groups:
   - name: "🚀 انتخاب خودکار (بهترین)"
     type: url-test
     url: "http://www.gstatic.com/generate_204"
-    interval: 600
-    tolerance: 100
+    interval: 300
+    tolerance: 25
     proxies:
       - "🇮🇷 Warp - IPv4-1"
       - "🇩🇪 Warp - IPv4-1"
